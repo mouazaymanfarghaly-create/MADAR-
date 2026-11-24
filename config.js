@@ -1,6 +1,5 @@
-// ضع بيانات مشروع Supabase هنا بعد إنشاء المشروع.
-// استخدم Project URL و anon/public key فقط. لا تضع service_role key في ملفات الموقع.
+// MADAR - Supabase Configuration
 window.MADAR_CONFIG = {
-  SUPABASE_URL: "YOUR_SUPABASE_PROJECT_URL",
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_PUBLIC_KEY"
+  SUPABASE_URL: "https://pbgkkphblduayukyfkiq.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_27h-QnkVCV9Ma5OwiJvbbQ_OhSaTBmq"
 };
