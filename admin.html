@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>لوحة إدارة مَدار</title><link rel="stylesheet" href="styles.css"></head>
+<body class="admin-page">
+  <header class="topbar"><a class="brand" href="index.html"><img src="assets/madar-logo.png" alt=""><span><b>MADAR | مَدار</b><small>Administration Portal</small></span></a><a href="index.html" class="admin-link">العودة للموقع</a></header>
+  <main class="admin-wrap">
+    <section class="login-card" id="login-panel">
+      <p class="eyebrow">SECURE ADMIN ACCESS</p><h1>دخول الإدارة</h1><p>هذه الصفحة مخصصة لفريق إدارة مَدار فقط.</p>
+      <form id="login-form"><label>البريد الإلكتروني<input type="email" name="email" required autocomplete="username"></label><label>كلمة المرور<input type="password" name="password" required autocomplete="current-password"></label><button class="primary-btn" type="submit">تسجيل الدخول</button><p id="login-message" class="form-message"></p></form>
+    </section>
+    <section id="dashboard" hidden>
+      <div class="dashboard-head"><div><p class="eyebrow">MADAR ADMINISTRATION</p><h1>طلبات الانضمام</h1><p id="admin-email"></p></div><button id="logout-btn" class="secondary-btn">تسجيل الخروج</button></div>
+      <div class="stats"><article><small>إجمالي الطلبات</small><b id="total-count">0</b></article><article><small>قيد المراجعة</small><b id="pending-count">0</b></article><article><small>مقبول</small><b id="accepted-count">0</b></article><article><small>مرفوض</small><b id="rejected-count">0</b></article></div>
+      <div class="table-tools"><input id="search-input" placeholder="ابحث بالاسم أو البريد الإلكتروني"><select id="status-filter"><option value="">كل الحالات</option><option value="pending">قيد المراجعة</option><option value="interview">مقابلة</option><option value="waitlist">قائمة انتظار</option><option value="accepted">مقبول</option><option value="rejected">مرفوض</option></select><button id="refresh-btn" class="secondary-btn">تحديث</button></div>
+      <div class="table-wrap"><table><thead><tr><th>الاسم</th><th>البريد</th><th>الصف</th><th>تاريخ التقديم</th><th>الحالة</th><th>إجراء</th></tr></thead><tbody id="applications-body"><tr><td colspan="6">لا توجد بيانات بعد.</td></tr></tbody></table></div>
+      <p class="privacy-note">بيانات الطلاب سرية. لا تشارك بيانات الدخول أو تصدّر الطلبات إلى جهات غير مخوّلة.</p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="admin.js"></script>
+</body></html>

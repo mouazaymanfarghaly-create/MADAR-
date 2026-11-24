@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MADAR - Youth Intellectual & Development Forum">
+  <title>MADAR | مَدار</title>
+  <link rel="icon" href="assets/madar-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><img src="assets/madar-logo.png" alt="MADAR logo"><span><b>MADAR | مَدار</b><small>Youth Intellectual & Development Forum</small></span></a>
+    <nav><a href="#home">الرئيسية</a><a href="#about">عن مَدار</a><a href="#activities">أنشطتنا</a><a href="#founders">المؤسسون</a></nav>
+    <a class="admin-link" href="admin.html">دخول الإدارة</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Your Mind. Your Ideas. Your MADAR.</p>
+        <h1>MADAR <span>| مَدار</span></h1>
+        <h2>Youth Intellectual & Development Forum</h2>
+        <p class="lead">ملتقى شبابي فكري وتعليمي وتنموي، يجمع العقول الشابة في مساحة واحدة للتفكير والحوار والتعلّم والتطور.</p>
+        <a class="primary-btn" href="#apply">قدّم طلب الانضمام <span>←</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="orbit">✦</div>
+        <div class="book">M</div>
+        <p>فكّر · ناقش · تعلّم · تطوّر</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading"><span>01</span><div><p class="eyebrow">WHO WE ARE</p><h2>مساحة للأفكار والعقول الشغوفة</h2></div></div>
+      <p class="about-text">مَدار مجتمع شبابي يفتح المجال أمام طلاب المرحلة الثانوية لتبادل الأفكار، واستكشاف موضوعات جديدة، وتنمية مهاراتهم من خلال الحوار والتعلّم والعمل الجماعي. لا نبحث عن أشخاص لديهم كل الإجابات؛ بل عن عقول شغوفة بطرح الأسئلة والبحث عن المعرفة.</p>
+    </section>
+
+    <section class="section activities" id="activities">
+      <div class="section-heading"><span>02</span><div><p class="eyebrow">WHAT WE DO</p><h2>ماذا يحدث داخل مَدار؟</h2></div></div>
+      <div class="activity-grid">
+        <article><i>◉</i><h3>مجالس حوارية</h3><p>مناقشة القضايا والأفكار في بيئة تحترم اختلاف وجهات النظر.</p></article>
+        <article><i>⌕</i><h3>أبحاث واستكشاف</h3><p>البحث في موضوعات جديدة وتعلّم كيفية التفكير النقدي.</p></article>
+        <article><i>✧</i><h3>ورش تنمية</h3><p>تطوير المهارات الشخصية والتواصل والعمل الجماعي.</p></article>
+        <article><i>◎</i><h3>مجتمع معرفي</h3><p>التواصل مع طلاب لديهم فضول ورغبة حقيقية في التعلّم.</p></article>
+      </div>
+    </section>
+
+    <section class="section founders" id="founders">
+      <div class="section-heading"><span>03</span><div><p class="eyebrow">THE PEOPLE BEHIND MADAR</p><h2>المؤسسون</h2></div></div>
+      <div class="founder-grid">
+        <article><b>01</b><h3>Mouaz Ayman Farghaly</h3><p>Founder</p></article>
+        <article><b>02</b><h3>Ibrahim Ibrahim Mohamed</h3><p>Founder</p></article>
+        <article><b>03</b><h3>Mazen Omar Abdel Fatah</h3><p>Founder</p></article>
+      </div>
+    </section>
+
+    <section class="apply-section" id="apply">
+      <div class="apply-intro"><p class="eyebrow">BECOME PART OF MADAR</p><h2>مكانك بين أصحاب الأفكار</h2><p>التقديم متاح لطلاب المرحلة الثانوية فقط. املأ البيانات بدقة، وسيقوم فريق مَدار بمراجعة طلبك.</p><div class="note">إرسال الطلب لا يعني القبول التلقائي. سيتم التواصل معك عبر البريد الإلكتروني عند تحديث حالة طلبك.</div></div>
+      <form id="application-form" class="application-form">
+        <h3>استمارة الانضمام</h3>
+        <div class="form-grid">
+          <label>الاسم بالكامل *<input name="full_name" required maxlength="120" autocomplete="name" placeholder="اكتب اسمك بالكامل"></label>
+          <label>البريد الإلكتروني *<input name="email" type="email" required maxlength="160" autocomplete="email" placeholder="name@example.com"></label>
+          <label>تاريخ الميلاد *<input name="date_of_birth" type="date" required></label>
+          <label>رقم الهاتف *<input name="phone" type="tel" required maxlength="30" placeholder="01xxxxxxxxx"></label>
+          <label>المحافظة *<input name="governorate" required maxlength="80" placeholder="محافظتك"></label>
+          <label>المدرسة *<input name="school" required maxlength="160" placeholder="اسم المدرسة"></label>
+          <label>الصف الدراسي الحالي *
+            <select name="school_year" required><option value="">اختر الصف</option><option>الأول الثانوي</option><option>الثاني الثانوي</option><option>الثالث الثانوي</option></select>
+          </label>
+          <label class="full">عرّفنا بنفسك *<textarea name="self_introduction" required minlength="30" maxlength="1200" rows="4" placeholder="من أنت؟ ما اهتماماتك وما الذي تحب أن يعرفه فريق مَدار عنك؟"></textarea></label>
+          <label class="full">لماذا تريد الانضمام إلى مَدار؟ *<textarea name="motivation" required minlength="30" maxlength="1500" rows="4" placeholder="احكِ لنا عن اهتمامك وما الذي تتطلع إلى تعلمه..."></textarea></label>
+          <label class="full">ما الموضوعات التي تهمك؟ *<textarea name="interests" required minlength="10" maxlength="1000" rows="3" placeholder="مثل: التكنولوجيا، المجتمع، العلوم، ريادة الأعمال..."></textarea></label>
+          <label class="full">اذكر موقفًا بادرت فيه أو ساهمت في عمل جماعي (اختياري)<textarea name="initiative_example" maxlength="1200" rows="3" placeholder="نشاط مدرسي، تطوع، مشروع، مساعدة مجتمعك..."></textarea></label>
+          <label>كم ساعة تستطيع تخصيصها أسبوعيًا؟ *<select name="weekly_availability" required><option value="">اختر</option><option>1–2 ساعة</option><option>3–4 ساعات</option><option>5–6 ساعات</option><option>أكثر من 6 ساعات</option></select></label>
+          <label class="consent full"><input type="checkbox" required> أؤكد أن البيانات المقدمة صحيحة، وأفهم أنها ستُستخدم لمراجعة طلب الانضمام والتواصل بشأنه.</label>
+        </div>
+        <button class="primary-btn submit-btn" type="submit">إرسال الطلب <span>←</span></button>
+        <p id="form-message" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><img src="assets/madar-logo.png" alt=""><p>“A greater future is built by curious minds.”</p><small>© <span id="year"></span> MADAR | Youth Intellectual & Development Forum</small></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
